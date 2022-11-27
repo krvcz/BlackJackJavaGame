@@ -4,11 +4,13 @@
 
 <h2>🚀 Screenshots</h2>
 
-![Alt Text](https://imgur.com/05UC5pU)
-![Alt Text](https://imgur.com/ZoKghxv)
-![Alt Text](https://imgur.com/z3t0EMP)
-![Alt Text](https://imgur.com/cbhxiwf)
+![mainmenu](https://user-images.githubusercontent.com/74314536/204163032-e164873e-e109-4250-a6cb-30475fa2ff81.PNG)
 
+![normalgame](https://user-images.githubusercontent.com/74314536/204163034-3ac7a08e-5f70-4014-b8e7-d93b83a29432.PNG)
+
+![result](https://user-images.githubusercontent.com/74314536/204163043-242b106c-4342-48ce-a802-0b36560a7d0e.PNG)
+
+![black](https://user-images.githubusercontent.com/74314536/204163046-5467ea43-42ca-43fb-9f64-20039cb3b50a.PNG)
 
 <h2>🛠️ How to get started:</h2>
 
