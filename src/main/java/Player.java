@@ -17,7 +17,7 @@ public abstract class Player  {
     }
 
     public void removeCard() {
-        cards.removeAll(cards);
+        cards.clear();
         }
     }
 
