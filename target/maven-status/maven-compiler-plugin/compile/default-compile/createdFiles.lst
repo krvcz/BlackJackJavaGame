@@ -1,0 +1,11 @@
+NoValidColor.class
+NoValidFigure.class
+Card.class
+Game.class
+Croupier.class
+Deck.class
+Player.class
+Human.class
+Background.class
+Menu.class
+GameInterface.class
