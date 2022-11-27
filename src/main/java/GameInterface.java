@@ -2,10 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
+
 
 public class GameInterface extends JFrame implements ActionListener {
     protected final JButton startButton = new JButton("START GAME");
@@ -16,12 +15,12 @@ public class GameInterface extends JFrame implements ActionListener {
     protected final JButton playAgainButton = new JButton("PLAY AGAIN");
     protected ArrayList<Card> playerCards = new ArrayList<>();
     protected ArrayList<Card> croupierCards = new ArrayList<>();
-//    protected boolean summaryFlag;
+
     private Optional<String> result;
 
     private final Game game;
 
-    private final Image backgroundImg = new ImageIcon("C:\\Desktop\\blackjack\\src\\main\\resources\\desk.jpg").getImage();
+    private final Image backgroundImg = new ImageIcon("src/main/resources/desk.jpg").getImage();
 
     private final JPanel panel = new JPanel() {
 
@@ -30,13 +29,13 @@ public class GameInterface extends JFrame implements ActionListener {
             super.paintComponent(g);
             int x1 = 200;
             int x2 = 200;
-            boolean on = false;
+
 //       background.paintComponent(g);
             Graphics2D background = (Graphics2D) g;
             background.drawImage(backgroundImg, 0, 0, 800, 600, this);
             if (playerCards.size() > 0) {
                 for (Card playerCard: playerCards) {
-                    Image  img = new ImageIcon("C:\\Desktop\\blackjack\\src\\main\\resources\\img\\deck2\\" + playerCard.getFigure() + playerCard.getColor() + ".png").getImage();
+                    Image  img = new ImageIcon("src/main/resources/img/deck2/" + playerCard.getFigure() + playerCard.getColor() + ".png").getImage();
                     Graphics2D carddraw = (Graphics2D) g;
                     carddraw.drawImage(img, x1, 260, 90, 160, this);
                     x1= x1 + 100;
@@ -48,18 +47,18 @@ public class GameInterface extends JFrame implements ActionListener {
             }
             if (croupierCards.size() > 0) {
                 Image  img;
-                String text;
+
                 for (Card croupierCard: croupierCards) {
 
                     if (!game.summaryFlag) {
                         if (x2 == 200) {
-                            img = new ImageIcon("C:\\Desktop\\blackjack\\src\\main\\resources\\img\\deck2\\" + croupierCard.getFigure() + croupierCard.getColor() + ".png").getImage();
+                            img = new ImageIcon("src/main/resources/img/deck2/" + croupierCard.getFigure() + croupierCard.getColor() + ".png").getImage();
                         } else {
-                            img = new ImageIcon("C:\\Desktop\\blackjack\\src\\main\\resources\\img\\deck2\\" + "back_card" + ".png").getImage();
+                            img = new ImageIcon("src/main/resources/img/deck2/" + "back_card" + ".png").getImage();
                         }
                     }
                     else {
-                        img = new ImageIcon("C:\\Desktop\\blackjack\\src\\main\\resources\\img\\deck2\\" + croupierCard.getFigure() + croupierCard.getColor() + ".png").getImage();
+                        img = new ImageIcon("src/main/resources/img/deck2/" + croupierCard.getFigure() + croupierCard.getColor() + ".png").getImage();
                     }
 
                     Graphics2D carddraw = (Graphics2D) g;
@@ -87,7 +86,7 @@ public class GameInterface extends JFrame implements ActionListener {
 
     };
 
-    public GameInterface(Game game) throws IOException {
+    public GameInterface(Game game){
         super("BlackJack");
 
         this.game = game;

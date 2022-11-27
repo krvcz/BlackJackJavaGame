@@ -1,10 +1,9 @@
 
 
 import java.io.*;
-import java.math.BigInteger;
+
 import java.util.Map;
-import java.util.Objects;
-import java.util.logging.Logger;
+
 
 
 import static java.util.Map.entry;
@@ -38,7 +37,7 @@ import static java.util.Map.entry;
 
 
 
-    public Game() throws IOException, NoValidFigure, NoValidColor {
+    public Game() throws  NoValidFigure, NoValidColor {
         croupier = new Croupier();
         player = new Human();
         deck = new Deck();
@@ -76,7 +75,7 @@ import static java.util.Map.entry;
 
 
     public static String showScore(Player player) {
-        int score;
+
 
        long special_figures_number = player.cards.stream()
                 .filter(card -> card.getFigure().equals("K")
