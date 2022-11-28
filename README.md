@@ -42,9 +42,9 @@ Technologies used in the project:
 <h1 align="center">Hi 👋, I'm Sebastian</h1>
 <h3 align="center">A passionate backend developer from Poland</h3>
 
-- 🌱 I’m currently learning **overall Java ;)**
+- 🌱 I’m currently learning **still Java and Spring ;)**
 
-- 👨‍💻 All of my projects are available at [my github](my github)
+- 👨‍💻 All of my projects are available at [my github]([my github](https://github.com/krvcz?tab=repositories))
 
 - 📫 How to reach me **sanko.sebastian@gmail.com**
 
